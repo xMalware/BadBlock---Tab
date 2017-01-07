@@ -63,6 +63,7 @@ public class PermissionsExManager extends AbstractPermissions {
 		}
 	}
 	
+	@SuppressWarnings("deprecation")
 	@Override
 	public boolean isInGroup(Player base, String groupName) {
 		PermissionUser user = manager.getUser(base.getName());
