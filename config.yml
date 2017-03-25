@@ -1,0 +1,14 @@
+groupsOrder:
+- A:Owner:&4Fondateur
+- B:Admin:&cAdmin
+- C:SysAdmin:&cSysAdmin
+- D:Responsable:&cResponsable
+- E:Developpeur:&aDéveloppeur
+- F:ModoCheat:&cModo&4Cheat&c
+- G:Modo:&cModérateur
+- H:ModoChat:&cModo&aChat
+- I:Animateur:&aAnimateur
+- J:Pluginer:&aDéveloppeur
+- K:Anim-Test:&aAnimTest
+- L:Youtuber:&aYouTuber
+chat: true

@@ -1,4 +1,4 @@
-package fr.xmalware.badblocktab.permissions;
+package fr.badblock.bukkit.tab.skyblock.permissions;
 
 import org.bukkit.entity.Player;
 
