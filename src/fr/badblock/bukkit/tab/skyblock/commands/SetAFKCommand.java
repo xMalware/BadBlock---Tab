@@ -1,13 +1,12 @@
 package fr.badblock.bukkit.tab.skyblock.commands;
 
-import org.bukkit.Bukkit;
 import org.bukkit.command.Command;
 import org.bukkit.command.CommandExecutor;
 import org.bukkit.command.CommandSender;
 import org.bukkit.entity.Player;
 
-import fr.badblock.bukkit.tab.skyblock.BadBlockTab;
-import fr.badblock.bukkit.tab.skyblock.objects.TabPlayer;
+import fr.xmalware.badblocktab.BadBlockTab;
+import fr.xmalware.badblocktab.objects.TabPlayer;
 
 public class SetAFKCommand implements CommandExecutor {
 

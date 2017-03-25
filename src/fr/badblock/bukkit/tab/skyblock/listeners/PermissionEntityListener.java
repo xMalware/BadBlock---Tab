@@ -3,23 +3,21 @@ package fr.badblock.bukkit.tab.skyblock.listeners;
 import org.bukkit.Bukkit;
 import org.bukkit.entity.Player;
 import org.bukkit.event.EventHandler;
+import org.bukkit.event.EventPriority;
 import org.bukkit.event.Listener;
 
-import fr.badblock.bukkit.tab.skyblock.BadBlockTab;
-import fr.badblock.bukkit.tab.skyblock.objects.TabPlayer;
-import fr.badblock.bukkit.tab.skyblock.permissions.PermissionsExManager;
-import ru.tehkode.permissions.PermissionEntity;
+import fr.xmalware.badblocktab.BadBlockTab;
+import fr.xmalware.badblocktab.objects.TabPlayer;
+import fr.xmalware.badblocktab.permissions.PermissionsExManager;
 import ru.tehkode.permissions.events.PermissionEntityEvent;
 
 public class PermissionEntityListener implements Listener {
 	
-	@EventHandler
+	@EventHandler (priority = EventPriority.MONITOR)
 	public void onPermissionEntity(PermissionEntityEvent event) {
 		Player player = Bukkit.getPlayer(event.getEntity().getName());
-		long time = System.currentTimeMillis();
 		//Bukkit.broadcastMessage("§e[STAPE 2] Testing for " + player.getName() + "...");
 		if (player == null || !player.isOnline()) return;
-		PermissionEntity permissionEntity = event.getEntity();
 		BadBlockTab instance = BadBlockTab.getInstance();
 		PermissionsExManager permissionsExManager = instance.permissionsExManager;
 		TabPlayer tabPlayer = TabPlayer.getPlayer(player);

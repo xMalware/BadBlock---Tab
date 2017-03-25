@@ -6,8 +6,8 @@ import org.bukkit.event.EventHandler;
 import org.bukkit.event.Listener;
 import org.bukkit.event.player.AsyncPlayerChatEvent;
 
-import fr.badblock.bukkit.tab.skyblock.BadBlockTab;
-import fr.badblock.bukkit.tab.skyblock.objects.TabPlayer;
+import fr.xmalware.badblocktab.BadBlockTab;
+import fr.xmalware.badblocktab.objects.TabPlayer;
 
 public class AsyncChatListener implements Listener {
 	
@@ -33,6 +33,10 @@ public class AsyncChatListener implements Listener {
 		tabPlayer.lastMessage = time;
 		String message = event.getMessage();
 		if (message == null) event.setCancelled(true);
+		String prefix = tabPlayer.prefix;
+		String suffix = tabPlayer.suffix == null || "".equals(tabPlayer.suffix) ? "§f" : tabPlayer.suffix;
+		String playerName = player.getDisplayName() != null && !player.getDisplayName().equals(player.getName()) ? player.getDisplayName() : prefix + player.getName();
+		event.setFormat(ChatColor.translateAlternateColorCodes('&', playerName + " §7: " + suffix + "%2$s"));
 	}
 	
 }
