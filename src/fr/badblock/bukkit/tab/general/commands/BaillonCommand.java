@@ -1,11 +1,11 @@
-package fr.xmalware.badblocktab.commands;
+package fr.badblock.bukkit.tab.general.commands;
 
 import org.bukkit.Bukkit;
 import org.bukkit.command.Command;
 import org.bukkit.command.CommandExecutor;
 import org.bukkit.command.CommandSender;
 
-import fr.xmalware.badblocktab.BadBlockTab;
+import fr.badblock.bukkit.tab.general.BadBlockTab;
 
 public class BaillonCommand implements CommandExecutor {
 

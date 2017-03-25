@@ -1,4 +1,4 @@
-package fr.xmalware.badblocktab;
+package fr.badblock.bukkit.tab.general;
 
 import java.util.ArrayList;
 import java.util.HashMap;
@@ -11,16 +11,16 @@ import org.bukkit.entity.Player;
 import org.bukkit.plugin.PluginManager;
 import org.bukkit.plugin.java.JavaPlugin;
 
-import fr.xmalware.badblocktab.commands.BaillonCommand;
-import fr.xmalware.badblocktab.commands.SetAFKCommand;
-import fr.xmalware.badblocktab.commands.SlowmodeCommand;
-import fr.xmalware.badblocktab.commands.TabBlockCommand;
-import fr.xmalware.badblocktab.listeners.AsyncChatListener;
-import fr.xmalware.badblocktab.listeners.PermissionEntityListener;
-import fr.xmalware.badblocktab.listeners.PlayerDisconnectionListener;
-import fr.xmalware.badblocktab.listeners.PlayerJoinListener;
-import fr.xmalware.badblocktab.objects.TabPlayer;
-import fr.xmalware.badblocktab.permissions.PermissionsExManager;
+import fr.badblock.bukkit.tab.general.commands.BaillonCommand;
+import fr.badblock.bukkit.tab.general.commands.SetAFKCommand;
+import fr.badblock.bukkit.tab.general.commands.SlowmodeCommand;
+import fr.badblock.bukkit.tab.general.commands.TabBlockCommand;
+import fr.badblock.bukkit.tab.general.listeners.AsyncChatListener;
+import fr.badblock.bukkit.tab.general.listeners.PermissionEntityListener;
+import fr.badblock.bukkit.tab.general.listeners.PlayerDisconnectionListener;
+import fr.badblock.bukkit.tab.general.listeners.PlayerJoinListener;
+import fr.badblock.bukkit.tab.general.objects.TabPlayer;
+import fr.badblock.bukkit.tab.general.permissions.PermissionsExManager;
 
 public class BadBlockTab extends JavaPlugin {
 

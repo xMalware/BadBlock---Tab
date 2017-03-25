@@ -1,4 +1,4 @@
-package fr.xmalware.badblocktab.listeners;
+package fr.badblock.bukkit.tab.general.listeners;
 
 import org.bukkit.ChatColor;
 import org.bukkit.entity.Player;
@@ -6,8 +6,8 @@ import org.bukkit.event.EventHandler;
 import org.bukkit.event.Listener;
 import org.bukkit.event.player.AsyncPlayerChatEvent;
 
-import fr.xmalware.badblocktab.BadBlockTab;
-import fr.xmalware.badblocktab.objects.TabPlayer;
+import fr.badblock.bukkit.tab.general.BadBlockTab;
+import fr.badblock.bukkit.tab.general.objects.TabPlayer;
 
 public class AsyncChatListener implements Listener {
 	

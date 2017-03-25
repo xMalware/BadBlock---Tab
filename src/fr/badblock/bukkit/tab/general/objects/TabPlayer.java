@@ -1,4 +1,4 @@
-package fr.xmalware.badblocktab.objects;
+package fr.badblock.bukkit.tab.general.objects;
 
 import java.util.HashMap;
 import java.util.Map;
@@ -11,7 +11,7 @@ import org.bukkit.entity.Player;
 import org.bukkit.scoreboard.Scoreboard;
 import org.bukkit.scoreboard.Team;
 
-import fr.xmalware.badblocktab.BadBlockTab;
+import fr.badblock.bukkit.tab.general.BadBlockTab;
 
 public class TabPlayer {
 
